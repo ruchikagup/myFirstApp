@@ -3,10 +3,12 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import * as serviceWorker from './serviceWorker';
 import MyFirstApp from './MyFirstApp';
+import CounterApp from './CounterApp';
 
 ReactDOM.render(
   <React.StrictMode>
     <MyFirstApp />
+    <CounterApp start = {1} increment = {3}  />
   </React.StrictMode>,
   document.getElementById('root')
 );
